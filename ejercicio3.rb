@@ -1,5 +1,6 @@
 # This is the class of a Vehicle
 class Vehicle
+  attr_accessor :model, :year, :start
   def initialize(model, year)
     @model = model
     @year = year
@@ -9,4 +10,8 @@ class Vehicle
   def engine_start
     @start = true
   end
+end
+
+class Car < Vehicle
+
 end
