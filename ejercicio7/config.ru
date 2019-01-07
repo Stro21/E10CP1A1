@@ -2,6 +2,7 @@
 require 'rack'
 
 # rubocop:disable LineLength
+# rubocop:disable UnusedMethodArgument
 
 # Es mi primera app con rack.
 class MiPrimeraWebApp
@@ -13,3 +14,4 @@ end
 run MiPrimeraWebApp.new
 
 # rubocop:enable LineLength
+# rubocop:enable UnusedMethodArgument
