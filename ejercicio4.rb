@@ -1,3 +1,8 @@
+# rubocop:disable ClassVars
+# rubocop:disable MethodName
+# rubocop:disable AsciiIdentifiers
+
+# Esta es una clase de una semana.
 class Semana
   @@primer_dia = 'Lunes'
 
@@ -6,14 +11,18 @@ class Semana
   end
 
   def self.en_un_meses
-    "Un mes tiene 4 semanas."
+    'Un mes tiene 4 semanas.'
   end
 
   def self.en_un_año
-    "Un año tiene 52 semanas."
+    'Un año tiene 52 semanas.'
   end
 end
 
 puts "La semana comienza el día #{Semana.primer_dia}"
 puts Semana.en_un_meses
 puts Semana.en_un_año
+
+# rubocop:enable ClassVars
+# rubocop:enable MethodName
+# rubocop:enable AsciiIdentifiers
