@@ -1,13 +1,13 @@
-# rubocop:disable ClassVars
 # rubocop:disable MethodName
 # rubocop:disable AsciiIdentifiers
+# rubocop:disable MutableConstant
 
-# Esta es una clase de una semana.
-class Semana
-  @@primer_dia = 'Lunes'
+# Este es un modulo de una semana.
+module Semana
+  PRIMER_DIA = 'Lunes'
 
   def self.primer_dia
-    @@primer_dia
+    PRIMER_DIA
   end
 
   def self.en_un_meses
@@ -23,6 +23,6 @@ puts "La semana comienza el día #{Semana.primer_dia}"
 puts Semana.en_un_meses
 puts Semana.en_un_año
 
-# rubocop:enable ClassVars
 # rubocop:enable MethodName
 # rubocop:enable AsciiIdentifiers
+# rubocop:enable MutableConstant
