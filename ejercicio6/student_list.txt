@@ -1,0 +1,10 @@
+Eduardo, 7, 7
+Pedro, 6, 7
+Carolina, 6.4, 6.8
+Alejandra, 6.7, 6.9
+Pablo, 7, 7
+Cecilia, 6, 6.5
+Fulano, 3, 4
+Gonzalo, 2, 2.5
+John, 1, 1.8
+Donald, 1, 1
