@@ -13,6 +13,9 @@ end
 
 # This is the module of Attendance.
 module Attendance
+  def student_quantity(quantity)
+    puts quantity
+  end
 end
 
 # This is a class of a Student.
@@ -27,9 +30,15 @@ class Student
     @grade2 = nota2
     @@quantity += 1
   end
+
+  def self.quantity
+    @@quantity
+  end
 end
 
 student = Student.new('Eduardo')
 student.result(student.grade1, student.grade2)
+puts Student.quantity
+student.student_quantity(Student.quantity)
 
 # rubocop:enable ClassVars
