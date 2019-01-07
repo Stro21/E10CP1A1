@@ -36,9 +36,16 @@ class Student
   end
 end
 
-student = Student.new('Eduardo')
-student.result(student.grade1, student.grade2)
-puts Student.quantity
+data = File.open('student_list.txt', 'r') { |file| file.readlines.map(&:chomp) }
+data.each do |line|
+  stu = line.split(', ')
+  nombre, nota1, nota2 = stu
+  student = Student.new(nombre, nota1.to_f, nota2.to_f)
+  student.result(student.grade1, student.grade2)
+end
+# student = Student.new('Eduardo')
+# student.result(student.grade1, student.grade2)
+# puts Student.quantity
 student.student_quantity(Student.quantity)
 
 # rubocop:enable ClassVars
