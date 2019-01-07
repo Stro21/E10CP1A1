@@ -1,8 +1,11 @@
-class Herviboro
-  @@definir = 'Sólo me alimento de vegetales!'
+# rubocop:disable MutableConstant
+
+# Este es una clase Herviboro.
+module Herviboro
+  DEFINIR = 'Sólo me alimento de vegetales!'
 
   def self.definir
-    @@definir
+    DEFINIR
   end
 
   def dieta
@@ -18,7 +21,8 @@ class Animal
 end
 
 # Esta es una clase Conejo
-class Conejo < Animal < Herviboro
+class Conejo < Animal
+  include Herviboro
   def initialize(name)
     @name = name
   end
@@ -28,3 +32,5 @@ conejo = Conejo.new('Bugs Bunny')
 conejo.saludar
 conejo.dieta
 Herviboro.definir
+
+# rubocop:enable MutableConstant
