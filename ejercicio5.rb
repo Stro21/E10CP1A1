@@ -31,6 +31,6 @@ end
 conejo = Conejo.new('Bugs Bunny')
 conejo.saludar
 conejo.dieta
-Herviboro.definir
+puts Herviboro.definir
 
 # rubocop:enable MutableConstant
