@@ -42,10 +42,10 @@ data.each do |line|
   nombre, nota1, nota2 = stu
   student = Student.new(nombre, nota1.to_f, nota2.to_f)
   student.result(student.grade1, student.grade2)
+  student.student_quantity(Student.quantity) if Student.quantity == 10
 end
 # student = Student.new('Eduardo')
 # student.result(student.grade1, student.grade2)
 # puts Student.quantity
-student.student_quantity(Student.quantity)
 
 # rubocop:enable ClassVars
