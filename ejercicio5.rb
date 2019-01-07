@@ -6,16 +6,18 @@ class Herviboro
   end
 
   def dieta
-    "Soy un Herviboro!"
+    'Soy un Herviboro!'
   end
 end
 
+# Esta es una clase Animal.
 class Animal
   def saludar
-    "Soy un animal!"
+    'Soy un animal!'
   end
 end
 
+# Esta es una clase Conejo
 class Conejo < Animal < Herviboro
   def initialize(name)
     @name = name
