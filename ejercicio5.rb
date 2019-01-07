@@ -29,8 +29,8 @@ class Conejo < Animal
 end
 
 conejo = Conejo.new('Bugs Bunny')
-conejo.saludar
-conejo.dieta
+puts conejo.saludar
+puts conejo.dieta
 puts Herviboro.definir
 
 # rubocop:enable MutableConstant
