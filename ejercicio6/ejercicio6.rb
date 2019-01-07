@@ -44,8 +44,5 @@ data.each do |line|
   student.result(student.grade1, student.grade2)
   student.student_quantity(Student.quantity) if Student.quantity == 10
 end
-# student = Student.new('Eduardo')
-# student.result(student.grade1, student.grade2)
-# puts Student.quantity
 
 # rubocop:enable ClassVars
